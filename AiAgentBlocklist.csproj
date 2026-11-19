@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>AiAgentBlocklist</RootNamespace>
+    <AssemblyName>AiAgentBlocklist</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>AiAgentBlocklist</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Alpha Quantum</Authors>
+    <Company>Alpha Quantum</Company>
+    <Copyright>Copyright (c) 2026 Alpha Quantum</Copyright>
+    <Description>Feed client for the AI agent blocklist: download, cache and match AI agent domains, AI browser extensions, process names and packages locally in .NET.</Description>
+    <PackageTags>ai-agents;ai-agent-blocklist;blocklist;ai-browser;mcp;coding-agents;browser-extensions;dns-filtering;firewall;mdm;endpoint-security;shadow-ai;ai-governance</PackageTags>
+    <PackageProjectUrl>https://www.aiagentblocklist.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/explainableaixai/aiagentblocklist-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!-- the build folder sits inside an unrelated git checkout: keep its commit hash out of the package -->
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>https://github.com/explainableaixai/aiagentblocklist-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
+
+    <!-- tests/ and examples/ are separate projects -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);tests/**;examples/**;nupkg/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
